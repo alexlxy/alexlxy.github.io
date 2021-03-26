@@ -1,23 +1,30 @@
 {
-  "name": "vuepress-blog",
+  "name": "afternoon-grocery-store",
   "version": "1.0.0",
-  "author": "FearwareX",
+  "description": "alexwjj's blog",
+  "main": "index.js",
+  "repository": "https://github.com/alexwjj/alexwjj.github.io",
+  "author": "alexwjj",
+  "license": "MIT",
   "scripts": {
-    "dev": "vuepress dev src",
-    "build": "vuepress build src",
-    "deploy": "./scripts/deploy"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "vuepress dev docs",
+    "build": "vuepress build docs",
+    "start": "nodemon --ext md,vue --watch .vuepress --watch . --exec vuepress dev docs"
   },
   "dependencies": {
-    "vue-class-component": "^7.2.6",
-    "vue-router": "3.4.5"
+    "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.5.7",
+    "@vuepress/plugin-medium-zoom": "1.0.0-alpha.0",
+    "@vuepress/plugin-pwa": "1.0.0-alpha.3",
+    "vuepress": "1.0.3",
+    "vuepress-plugin-flowchart": "^1.4.3",
+    "vuepress-theme-reco": "1.0.8-alpha.3"
   },
   "devDependencies": {
     "@vuepress-reco/vuepress-plugin-kan-ban-niang": "^1.0.5",
-    "@vuepress/plugin-google-analytics": "^1.7.1",
-    "vuepress": "1.7.1",
-    "vuepress-plugin-boxx": "0.0.7",
-    "vuepress-plugin-dynamic-title": "1.0.0",
-    "vuepress-plugin-sitemap": "^2.3.1",
-    "vuepress-theme-reco": "1.6.1"
+    "@vuepress-reco/vuepress-plugin-loading-page": "^1.4.0",
+    "nodemon": "^2.0.4",
+    "vuepress-plugin-cursor-effects": "0.0.4",
+    "vuepress-plugin-dynamic-title": "0.0.5"
   }
 }
